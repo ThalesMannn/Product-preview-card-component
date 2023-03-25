@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --cor-preco: hsl(158, 36%, 37%);
+    --cor-fundo-geral: hsl(30, 38%, 92%);
+    --cor-fundo-letras: hsl(0, 0%, 100%);
+    --cor-titulo: hsl(212, 21%, 14%);
+    --cor-paragrafos: hsl(228, 12%, 48%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--cor-fundo-geral);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 20% auto;
+}
+
+.imagem__principal {
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+}
+
+.caixa {
+    background-color: var(--cor-fundo-letras);
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+}
+
+.caixa__paragrafo__principal {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    padding: 6% 0 6% 8%;
+    font-size: 14px;
+    color: var(--cor-paragrafos);
+}
+
+.caixa__titulo {
+    font-family: 'Fraunces', serif;
+    padding: 0% 0% 6% 8%;
+    color: var(--cor-titulo);
+}
+
+.caixa__paragrafo__secundario {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    padding: 0% 0% 6% 8%;
+    color: var(--cor-paragrafos);
+}
+
+.valores {
+    display: flex;
+    padding: 0% 0% 5% 8%;
+    gap: 50px;
+}
+
+.caixa__primeiro__valor {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-family: 700;
+    color: var(--cor-preco);
+
+}
+
+.caixa__segundo__valor {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3%;
+    text-decoration: line-through;
+}
+
+.caixa__comprar {
+    display: flex;
+    justify-content: center;
+}
+
+.comprar {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    background-color: var(--cor-preco);
+    padding: 3% 10%;
+    border-radius: 5px;
+}
+
+.carrinho {
+    width: 10%;
+    color: var(--cor-fundo-letras);
+}
+
+.caixa__pagamento {
+    text-decoration: none;
+    color: var(--cor-fundo-letras);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.comprar:hover {
+    background-color: #022F1F;
+    cursor: pointer;
+}
+
